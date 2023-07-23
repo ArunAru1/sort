@@ -1,0 +1,5 @@
+%macro sort (ds,byvarible);
+proc sort data=&ds out=&ds;
+by &variable;
+run;
+%mend;
